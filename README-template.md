@@ -1,60 +1,81 @@
-# Welcome to \<Project-Name\>!  
-(maybe add some kind of fancy burning match banner?)
+# Welcome to \<Interactive, Solar-Powered Air Quality Monitor with Adaptive Feedback\>!  
+────────────────────────────────────────────
+   
+     🔥 Temperature & ~~~ CO2 →  🌳 Sensor Tree  →  🍃 Moving Leaves
+               Detection           Solar System     Adaptive Feedback
 
-very **short** description of: 
-- what it is 
-- in what context it was developed 
 
-```A simple DIY "drone" streaming either live camera or infrared feed. Part of the [TechTales exhibition at UNI_VERSUM.](https://linktothething.notarealwebsite.com)```
 
-Try to stick to 1 or 2 sentences, no more than a paragraph.
+```The project consists of a solar-powered, open-source air quality monitoring device built around a low-power microcontroller. It integrates environmental sensors for temperature, humidity, and air quality, combined with simple, tangible feedback mechanisms such as sound output and mechanical movement. This project serves as an educational and research-based learning resource developed within the context of a bachelor’s thesis in electrical engineering.```
 
-## Features (optional)
 
-## Hardware (optional)
 
-if your project only consists of an esp32 devboard, a potentiometer, and a raspberry pi, feel free to list them here -> immediately show what is needed / for what it is designed
+## Vision and motivation
+```The vision of this project is to lower the entry barriers to electrical engineering by providing an interactive, tangible learning artifact that connects theory and practice in an accessible way. Electrical engineering involves many complex and abstract concepts that can be difficult to approach, especially for students at an early stage of their studies or for technically interested non-experts. In strongly theory-driven learning contexts, practical relevance and interdisciplinary understanding are often missing or remain intangible. This project addresses these challenges by developing an interactive, solar-powered air quality monitor as a prototypical teaching and learning object. The device is designed not only as a functional technical system, but as a didactic artifact that makes core concepts of electrical engineering experientially understandable.```
+
+## Hardware
+
+
 
 ```
-- Seeed Studio XIAO ESP32S3 Sense
-- super duper fancy Infrared-Sensor2000
-- 340mAh LiPo battery
-- 22in mylar ballon (or similar)
-- kite string
-- optional NeoPixels or similar
+Main Components
+| Component                               | Function                                                           |
+| --------------------------------------- | ------------------------------------------------------------------ |
+| Arduino Pro Mini (5V)                   | Main microcontroller controlling sensors, servos, and audio module |
+| BMP280 Sensor                           | Measures temperature and atmospheric pressure                      |
+| SGP30 Sensor                            | Measures air quality (VOC and eCO₂ levels)                         |
+| DFPlayer Mini                           | Audio playback module for environmental feedback sounds            |
+| Mini Speaker (3W)                       | Audio output for DFPlayer                                          |
+| 2× MG90S Servo Motors                   | Drive the mechanical leaf movement as physical feedback            |
+| Solar Panel                             | Provides renewable power for the system                            |
+| LiPo Battery(3,7V)                      | Energy storage for stable operation                                |
+| Charging Module (TP4056 or similar)     | Battery charging and protection                                    |
+| Voltage Regulation Module               | Ensures stable voltage supply for electronics                      |
+
+Structural Components
+
+| Component                           | Function                                             |
+| ----------------------------------- | ---------------------------------------------------- |
+| Laser-cut Acrylic Parts             | Structural frame and housing of the tree             |
+| Threaded Brass Inserts / Screws     | Mechanical connections                               |
+| Custom Acrylic Connectors           | Designed and laser cut to connect branches and trunk |
+| Transparent Acrylic Crown           | Houses solar panel and diffuses light                |
+
+
+
 ```
 
-if it requires a bunch of components, put it in the documentation
 
-## Quick Start / Documentation (optional)
 
-if it's something super simple (a standalone arduino sketch), provide a quick description of how to get it running here. 
-if at all possible, add picture(s)! 
-(make sure to note any special version requirements, or such, if relevant)
+## Quick Start / Documentation 
 
 ``` 
-Only works with Arduino IDE >= 2.13 !
+Software Setup
+The prototype runs a simple Arduino-based program that reads environmental sensors and converts the data into mechanical and auditory feedback. The microcontroller controls the air-quality sensors, the servo motors that move the leaves, and the audio playback module.
 
-- Connect the camera module to the ESP32 as described here: [link]
-- Copy the src folder to your computer and open the sketch in Arduino IDE. 
-- Make sure to install somerandomlibrary
-- Set your own WiFi credentials
-- Compile and Upload 
-- Open browser and enjoy!
+How to run the code
+1. Install the Arduino IDE.
+2. Install the required libraries:
+Adafruit BMP280 (temperature and pressure sensor)
+Adafruit SGP30 (air quality sensor)
+Servo library
+DFRobotDFPlayerMini
 
-If anything went wrong, check common errors and solutions in docs/troubleshooting.md, or use our [handy little prompt template](https://github.com/smitzkar/wald-troubleshooting-prompt/) to let your favourite llm guide you through the process.  
+3. Select the correct board (Arduino Pro Mini / ATmega328) in the Arduino IDE.
+4. Connect the board using a USB-to-Serial adapter.
+5. Upload the provided sketch from the /software folder.
 
-If it's your first time using Arduino, we recommend you follow [this guide.](https://randomnerdtutorials.com/installing-esp32-arduino-ide-2-0/)
+Notes
+The system reads air quality data (VOC / eCO₂) and maps it to servo movement and sound output.
+Servo motors drive the leaf mechanism, providing physical feedback.
+The DFPlayer Mini plays short environmental sound clips through a small speaker.
+Power is provided through a solar panel and LiPo battery system.
 
 ```
 
-if it's more complex, link to the relevant documentation. for example: 
-```
-Check out our [Quick Start Guide here!](docs/Build-Guide.md) 
-For a quick guide on how to get started with bela, see: [linktosomegoodplace](https://actuallinktogoodplace.notarealwebsite.com)
-```
+ 
 
-## Anything Else? 
+
 
 ## Links 
 
