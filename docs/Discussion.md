@@ -31,3 +31,51 @@ It depends on:
 • No proprietary software, cloud services, or external infrastructure
 All dependencies are openly documented and replaceable with comparable components.
 ```
+##Cost##
+```
+The total material cost for a single device is estimated to be approximately 40–60 EUR.
+This estimate reflects that several components were reused from existing stock in university laboratories, while the remaining parts were sourced through the Living the Forest Lab. The design explicitly supports the reuse of available components and does not rely on specialized or hard-to-source parts.
+As a result, actual costs may vary depending on existing inventories and access to shared lab resources.
+```
+## Validation
+
+```
+The system was validated through functional testing of individual subsystems, including:
+• Sensor readings under varying environmental conditions
+• Power supply and charging behavior during solar operation
+• Correct triggering of feedback mechanisms based on sensor thresholds
+Validation focused on robustness and understandability rather than measurement accuracy or calibration against certified reference instruments. The device is intended as a learning and research prototype, not as a calibrated measurement system.
+
+```
+##Education resources
+
+```
+This project serves as an educational and research-based learning resource developed within the context of a bachelor’s thesis in electrical engineering.
+The documentation supports learning and teaching through:
+• Detailed build instructions and circuit schematics
+• Annotated firmware code and explanations
+• Conceptual descriptions of solar power management, sensor systems, and feedback
+mechanisms
+
+```
+##Roadmap
+
+```
+The project was developed as part of a bachelor’s thesis in electrical engineering and followed an iterative, prototype-driven process.
+Past and current stages
+• Concept development and definition of educational and design goals
+• Selection and testing of environmental sensors and power components
+• Development of a solar-powered energy supply and low-power firmware
+• Integration of sensors, actuators, and adaptive feedback mechanisms
+• Fabrication of enclosure and mechanical elements
+• Documentation and validation of the functional prototype
+```
+##Future milestones
+
+```
+• Refinement of hardware robustness and enclosure design
+• Improved modularization of hardware and firmware components
+• Expansion of educational materials and workshop-ready documentation
+• Optional evaluation in teaching or workshop settings
+
+```
