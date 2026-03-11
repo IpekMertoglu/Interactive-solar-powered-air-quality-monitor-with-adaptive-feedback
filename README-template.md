@@ -73,8 +73,27 @@ Power is provided through a solar panel and LiPo battery system.
 
 ```
 
- 
+## First conceptual sketch of the project
 
+<img src="src/images/first_iteration_1.png" width="600">
+<img src="src/images/first_iteration_2.png" width="600">
+
+## Laser-cut acrylic components of the enclosure and mechanical elements
+ 
+<img src="src/images/cutted_all.png" width="600">
+
+## Custom connection elements fabricated from acrylic
+ 
+<img src="src/images/custom_parts" width="600">
+
+<img src="src/images/connecting,png" width="600">
+
+## Integration of mechanical components and electronic subsystems during assembly
+<img src="src/images/tech.png" width="600">
+
+## The completed prototype
+<img src="src/images/final_1.png" width="600">
+<img src="src/images/final_2.png" width="600">
 
 
 ## Links 
